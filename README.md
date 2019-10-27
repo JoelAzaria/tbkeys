@@ -22,3 +22,9 @@ does not currently work with Thunderbird 68.
 |  k  | Previous message |
 |  o  | Open message |
 |  x  | Archive message |
+
+
+## Info on keybindings
+
+For modifier keys you can use `shift`, `ctrl`, `alt`, or `meta`
+More info can be found here: https://craig.is/killing/mice
