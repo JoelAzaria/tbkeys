@@ -28,3 +28,5 @@ does not currently work with Thunderbird 68.
 
 For modifier keys you can use `shift`, `ctrl`, `alt`, or `meta`
 More info can be found here: https://craig.is/killing/mice
+
+For a trick to see what the target action is (`<keyset>` and `<key>` elements) see here: http://forums.mozillazine.org/viewtopic.php?p=14845675#p14845675
