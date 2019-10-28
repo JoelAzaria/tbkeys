@@ -114,6 +114,7 @@ var TBKeys = {
         // this.bindKey(window, "x", "window.goDoCommand('cmd_archive')")
         //this.bindKey(window, "c", "window.MsgNewMessage()")
         this.bindKey(window, "l", "window.goDoCommand('cmd_toggleFolderPane')")
+        this.bindKey(window, "alt+f8", "window.goDoCommand('cmd_toggleMessagePane')")
 
 
         /*this.bindKey(window, "u", `

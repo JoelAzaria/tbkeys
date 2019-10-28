@@ -12,21 +12,32 @@ does not currently work with Thunderbird 68.
 
 | Key | Function |
 | --- | -------- |
-|  c  | Compose new message  |
 |  r  | Reply |
-|  a  | Reply all |
-|  f  | Forward |
-|  #  | Delete |
-|  u  | Refresh mail. If a message tab is open, close it. |
-|  j  | Next message |
-|  k  | Previous message |
-|  o  | Open message |
-|  x  | Archive message |
+|  shft+r  | Reply all |
+|   l | Toggle Folder List Pane |
+| alt+f8| Toggle Message Pane |
+
 
 
 ## Info on keybindings
 
-For modifier keys you can use `shift`, `ctrl`, `alt`, or `meta`
-More info can be found here: https://craig.is/killing/mice
+For modifier keys you can use `shift`, `ctrl`, `alt`, or `meta`.  More info can be found here: https://craig.is/killing/mice
+Function keys supported with lower case `f` (e.g. `f8`, `f12`)
 
 For a trick to see what the target action is (`<keyset>` and `<key>` elements) see here: http://forums.mozillazine.org/viewtopic.php?p=14845675#p14845675
+
+```
+setTimeout(function () {
+  function getCommand(event) {
+    window.removeEventListener("command", getCommand, true);
+    event.preventDefault();
+    event.stopPropagation();
+    console.log(event.originalTarget.parentElement);
+    console.log(event.originalTarget);
+    console.log("event listener is removed");
+    Services.wm.getMostRecentWindow("devtools:webconsole").focus();
+  }
+  window.addEventListener("command", getCommand, true);
+  console.log("event listener is added");
+}, 2000);
+```
